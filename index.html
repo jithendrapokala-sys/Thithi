@@ -330,28 +330,33 @@
                 <div class="bg-white p-8 border border-amber-200 rounded-3xl shadow-sm">
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Request Advisory Session</h3>
                     <p class="text-xs text-slate-500 mb-6">Or connect via call/WhatsApp at +91-6303858703</p>
-                    <form class="space-y-4" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-                        <div>
-                            <input type="text" name="name" placeholder="Full Name" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 text-sm" required>
-                        </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Work Email Address" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 text-sm" required>
-                        </div>
-                        <div>
-                            <select name="service" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-700 focus:outline-none focus:border-amber-500 text-sm">
-                                <option>Business Timing Intelligence</option>
-                                <option>People Intelligence & Team Alignment</option>
-                                <option>Executive & Founder Advisory</option>
-                            </select>
-                        </div>
-                        <div>
-                            <textarea name="message" rows="3" placeholder="Brief outline of your timing or team challenge..." class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 text-sm"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold rounded-xl text-sm transition shadow-md shadow-amber-500/20">
-                            Submit Advisory Request
-                        </button>
-                    </form>
-                </div>
+                    <form form class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="23275be4-fd58-40da-9591-9495a9148f5a">
+
+    <input type="hidden" name="subject" value="New Consultation Request from Thithi.in">
+
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <div>
+        <input type="text" name="name" placeholder="Full Name" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 text-sm" required>
+    </div>
+    <div>
+        <input type="email" name="email" placeholder="Work Email Address" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 text-sm" required>
+    </div>
+    <div>
+        <select name="service" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-700 focus:outline-none focus:border-amber-500 text-sm">
+            <option>Business Timing Intelligence</option>
+            <option>People Intelligence & Team Alignment</option>
+            <option>Executive & Founder Advisory</option>
+        </select>
+    </div>
+    <div>
+        <textarea name="message" rows="3" placeholder="Brief outline of your timing or team challenge..." class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-amber-500 text-sm"></textarea>
+    </div>
+    <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold rounded-xl text-sm transition shadow-md shadow-amber-500/20">
+        Submit Advisory Request
+    </button>
+</form>                </div>
             </div>
 
             <div class="mt-16 pt-8 border-t border-amber-200 text-xs text-slate-500 leading-relaxed">
